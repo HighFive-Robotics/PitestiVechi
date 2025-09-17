@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vechiul Oraș - Experiență Modernă</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Pages/styles/PiataPrimariei.css">
+</head>
+<body>
+
+    <div class="aurora-background">
+        <div class="aurora-blob viridian"></div>
+        <div class="aurora-blob purple"></div>
+    </div>
+    <div id="interactive-grid"></div>
+
+    <main>
+        <section class="content-section" id="hero">
+            <div class="text-content">
+                <h1 class="scroll-reveal">Piața Primăriei</h1>
+                <p class="scroll-reveal">O călătorie digitală în inima istorică a Piteștiului.</p>
+            </div>
+        </section>
+
+        <section class="content-section" id="gallery">
+            <div class="gallery-header scroll-reveal">
+                <h2>Galerie Foto</h2>
+                <button id="open-lightbox-btn">Vezi galeria</button>
+            </div>
+            <div class="gallery-carousel-wrapper">
+                <div class="gallery-container scroll-reveal">
+                     
+                </div>
+                <button class="carousel-arrow left scroll-reveal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <button class="carousel-arrow right scroll-reveal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div class="carousel-pagination scroll-reveal">
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="narrative">
+            <div class="text-content scroll-reveal">
+                <h2>Povestea Pieței</h2>
+                <p>
+                    Piața Primăriei din Pitești este mai mult decât un centru administrativ; este o scenă pe care s-a desfășurat istoria orașului. Clădirea impunătoare, un simbol al arhitecturii neoclasice de la începutul secolului XX, a privit tăcută transformarea urbei. Prin anii 1920, aici pulsul orașului era cel mai alert, un loc al elitelor și al viitorului.
+                </p>
+            </div>
+        </section>
+        
+        <section class="content-section" id="map">
+            <div class="text-content scroll-reveal">
+                <h2>Redescoperă Locația</h2>
+                <a href="https://maps.app.goo.gl/ouZqJrnLdAemu5kg8" target="_blank" class="map-button">
+                    <span>Vezi pe hartă în prezent</span>
+                </a>
+            </div>
+            <div class="map-container scroll-reveal">
+                <iframe class="map-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.170705264211!2d24.864419092121636!3d44.85881949904246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b2bd8d18070ad5%3A0xa8b6d15f74752614!2sCity%20Hall%20Square!5e0!3m2!1sen!2sro!4v1758092596102!5m2!1sen!2sro" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proiectul: <strong>Vechiul Oraș</strong> realizat de <strong>High Five Robotics</strong> in colaborare cu <strong>Primăria Pitești</strong></p>
+    </footer>
+
+    <div id="lightbox">
+        <button id="lightbox-close-btn">
+             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div id="lightbox-grid"></div>
+    </div>
+
+    <script src="/Pages/scripts/PiataPrimariei.js"></script>
+</body>
+</html>
+
